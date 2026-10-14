@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Seatwork 1</title>
+     <style>
+            .white-box {
+                background-color: rgb(255, 255, 255); 
+                padding: 30px 50px;            
+                border-radius: 9px;
+                border-color: rgb(62, 95, 126);
+                border-style: solid;
+                color: rgb(112, 131, 149);  
+                display: inline-block; 
+}
+            body {
+                background-image: url(https://i.pinimg.com/736x/fe/e9/8d/fee98de3a3fe8e113ee2a32ae11679dd.jpg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                font-family:'Courier New', Courier, monospace;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                min-height: 70vh;
+            } 
+
+             .search {
+                background-color: rgb(62, 95, 126); 
+                color: white; 
+                padding: 10px 18px;  
+                border-radius: 10px;
+                font-size: 16px;  
+                font-family: 'Courier New', Courier, monospace;
+             }
+</style>
+</head>
+<body>
+    <div class="white-box">
+      <h1>Social Studies Club Checker</h1>
+    <form>
+        <input type="text" id="first_name" placeholder="Enter your first name"><br><br>
+        <input type="text" id="last_name" placeholder="Enter your last name"><br><br>
+        <input type="button" class="search" py-click="student_club" value="Search">
+    </form><br>
+  <div id="result"></div>
+</div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
